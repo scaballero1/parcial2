@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="10" alignment="CENTER"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="co.edu.poli.examen2_caballero.controlador.ControlForm">
+
+    <TextField fx:id="txtNumero" promptText="Número"/>
+
+    <DatePicker fx:id="dateCompra"/>
+
+    <ComboBox fx:id="comboPropietario"/>
+
+    <HBox spacing="10">
+        <RadioButton fx:id="rbCasa" text="Casa"/>
+        <RadioButton fx:id="rbApartamento" text="Apartamento"/>
+    </HBox>
+
+    <TextField fx:id="txtValor" promptText="Valor (pisos o piso)"/>
+
+    <Button text="Crear" onAction="#crear"/>
+
+</VBox>
